@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "SekizSpeed",
+  "version": "1.0",
+  "description": "puhutv videolarini hizlandirip yavaslatin + kesit indirin",
+  "permissions": ["storage"],
+  "host_permissions": ["*://*.puhutv.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.puhutv.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "SekizSpeed"
+  }
+}

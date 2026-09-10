@@ -1,0 +1,3 @@
+# ffmpeg.wasm büyük binary — ayrı indirilir, repoya konmaz
+*.wasm
+ffmpeg*.wasm
