@@ -5,8 +5,8 @@ puhutv videolarını hızlandırıp yavaşlatan + kesit (clip) indiren Chrome ek
 ## Özellikler
 
 - ⏩ Video oynatma hızı kontrolü (hızlandır / yavaşlat)
-- ✂️ Kesit indirme — videonun istediğin bölümünü MP4 olarak indir
-- 🎬 ffmpeg.wasm ile tarayıcı içinde birleştirme (sunucu yok)
+- ✂️ Kesit indirme — videonun istediğin bölümünü WebM olarak indir
+- 🎬 MediaRecorder ile tarayıcı içinde kayıt (sunucu yok, ek bağımlılık yok)
 
 ## Kurulum (geliştirici modu)
 
@@ -22,5 +22,5 @@ puhutv videolarını hızlandırıp yavaşlatan + kesit (clip) indiren Chrome ek
 
 ## Not
 
-- ffmpeg.wasm (~31MB) worker'da tembel yüklenir (sadece indirme butonuna basınca), UI'ı kırmamak için.
+- Kesit indirme `MediaRecorder` + `captureStream` ile yapılır, çıktı WebM formatındadır.
 - Sadece `*.puhutv.com` üzerinde çalışır.
